@@ -1,0 +1,262 @@
+/*!
+Theme Name: lepays
+Author: Bruce RAILLARD
+Version: 1.0.0
+Requires PHP: 5.6
+*/
+
+/* ----- general ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;700&display=swap');
+
+* {
+	font-family: 'Newsreader', serif;
+}
+
+body {
+	background-color: #F0F0F0;
+}
+
+
+
+/* ----- Header ----- */
+
+.header_logo {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	background-color: #FFFFFF;
+}
+
+.header_logo>img {
+	width: 15%;
+}
+
+.header_nav {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: #FFFFFF !important;
+	border-top: 2px solid #000000;
+	margin-bottom: 3%;
+}
+
+.header_nav__list {
+	display: flex;
+	justify-content: center;
+}
+
+/* ----- End Header ----- */
+
+
+
+
+/* ----- Pages ----- */
+
+.home-page {
+	width: 60%;
+	margin: auto;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-evenly;
+}
+
+.culture-page,
+.sport-page,
+.event-page {
+	width: 60%;
+	margin: auto;
+	background-color: #FFFFFF;
+}
+
+.home-page_post {
+	width: 73%;
+	background-color: #FFFFFF;
+}
+
+.home-page_event {
+	width: 23%;
+	background-color: #FFFFFF;
+	padding: 2%;
+}
+
+.home-page_event__title {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+
+.culture-page_title,
+.sport-page_title {
+	text-align: center;
+	margin: 2%;
+	padding-top: 2%;
+}
+
+.home-page_post__last-posts,
+.culture-page_last-posts,
+.sport-page_last-posts {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 100%;
+	align-content: flex-start;
+}
+
+.home-page_event__last-posts {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	max-height: max-content !important;
+	justify-content: center;
+}
+
+.home-page_post__last-posts___card,
+.culture-page_last-posts__card,
+.sport-page_last-posts__card {
+	width: 23%;
+	height: max-content;
+	padding: 1%;
+	margin: 0 1% 0 1%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	margin-bottom: 2%;
+}
+
+.home-page_event__last-posts___card {
+	width: 100%;
+	margin: auto;
+	max-height: max-content !important;
+	border-bottom: solid 1px #000000;
+	text-align: center;
+}
+
+.home-page_post__last-posts___card____img,
+.home-page_event__last-posts___card____img,
+.culture-page_last-posts__card___img,
+.sport-page_last-posts__card___img {
+	width: 100%;
+	height: auto;
+}
+
+div.home-page_post__last-posts___card____img>img,
+div.home-page_event__last-posts___card____img>img,
+div.culture-page_last-posts__card___img>img,
+div.sport-page_last-posts__card___img>img {
+	width: 100%;
+	height: auto;
+}
+
+.home-page_post__last-posts___card____body,
+.home-page_event__last-posts___card____body {
+	margin-top: 5%;
+}
+
+.home-page_post__last-posts___card____body_____title,
+.home-page_event__last-posts___card____body_____title,
+.home-page_event__last-posts___card____body_____title,
+.sport-page_last-posts__card___body_____title,
+.culture-page_last-posts__card___body____title,
+.event-page_last-posts__card___body_____title {
+	color: #000000;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+
+.home-page_post__last-posts__card___body____title :hover,
+.home-page_event__last-posts___card____body_____title :hover,
+.sport-page_last-posts__card___body_____title :hover,
+.event-page_last-posts__card___body_____title :hover {
+	color: #000000 !important;
+	text-decoration: underline;
+}
+
+div.home-page_post__last-posts___card____body_____text > p,
+div.home-page_event__last-posts___card____body_____text > p,
+div.sport-page_last-posts__card___body____text > p,
+div.culture-page_last-posts__card___body____text > p,
+div.event-page_last-posts__card___body____text > p  {
+	line-height: 1rem;
+	font-size: 0.875rem;
+}
+
+div.home-page_event__last-posts___card____body_____text > p {
+	margin: 0;
+}
+
+/* ----- End Pages ----- */
+
+
+/* ----- Article ----- */
+
+.article-post-content {
+	width: 50%;
+	margin: auto;
+	background-color: #FFFFFF;
+	padding: 1%;
+}
+
+.article-post-content_title {
+	font-weight: 400;
+	font-size: 2.5rem;
+}
+
+.article-post-content_text {
+ font-size: 1rem;
+ font-weight: 300;
+}
+
+.article-post-content_img > img {
+	max-width: 50%;
+	height: 100%;
+}
+
+
+
+
+/* ----- Mobile version ----- */
+
+@media (max-width: 990px) {
+	.home-page {
+		width: 100%;
+		margin: auto;
+		display: flex;
+		flex-flow: column-reverse;
+		justify-content: space-evenly;
+	}
+
+	.culture-page,
+	.sport-page {
+		width: 100%;
+}
+
+	.home-page_post {
+		width: 100%;
+		background-color: #FFFFFF;
+	}
+	
+	.home-page_event {
+		width: 100%;
+		margin-bottom: 5%;
+	}
+
+	.home-page_event__last-posts {
+		width: 100%;
+	}
+
+	.home-page_post__last-posts___card,
+	.culture-page_last-posts__card,
+	.sport-page_last-posts__card {
+		width: 45%;
+		height: max-content;
+		padding: 1%;
+		margin: 0 1% 0 1%;
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		margin-bottom: 2%;
+}
+
+}
